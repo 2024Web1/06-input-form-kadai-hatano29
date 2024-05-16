@@ -18,10 +18,18 @@
         * メロン
     * 送信ボタンには名前 `submit` を付与する
 -->
-<h4><!-- 出席番号 氏名 --></h4>
+<h4>0J01029 波多野泰地<!-- 出席番号 氏名 --></h4>
 
 <!-- フォームコードは以下に記述-->
-
+<p>あなたの好きなフルーツを選んでください。</p>
+<form method="POST" action="pulldown.php">
+    <select name="fruit">
+        <option value="オレンジ">オレンジ</option>
+        <option value="リンゴ">リンゴ</option>
+        <option value="メロン">メロン</option>
+    </select>
+    <input type="submit" name="submit" value="送信">  
+</form>
 <!-- ここまで -->
 </body>
 </html>
